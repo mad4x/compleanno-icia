@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compleanno CTF</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="title">Missione Compleanno 🎈</h1>
+            <p class="subtitle">Risolvi l'enigma per aprire il tuo regalo!</p>
+        </header>
+
+        <main>
+            <section class="game-card puzzle-section">
+                <h2>💌 Messaggio Segreto</h2>
+                <div class="message-box">
+                    <p id="encrypted-message" class="encrypted-text"></p>
+                </div>
+                
+                <div class="controls">
+                    <label for="shift-value" class="label">Ruota la torta (Shift): 🍰</label>
+                    <input type="range" id="shift-value" min="1" max="25" value="3" class="slider">
+                    <span id="current-shift" class="shift-display">3</span>
+                    
+                    <label for="decrypted-input" class="label">Cosa c'è scritto?</label>
+                    <input type="text" id="decrypted-input" placeholder="Scrivi qui la frase..." class="text-input">
+                </div>
+                
+                <button id="check-solution" class="cta-button">Controlla Codice</button>
+            </section>
+
+            <section class="game-card flag-section">
+                <p id="feedback-message" class="feedback-text"></p>
+                
+                <div id="flag-display" class="flag-box hidden">
+                    <h3>Codice Trovato!</h3>
+                    <p class="flag-text"></p>
+                </div>
+
+                <div id="gift-area" class="hidden">
+                    <a href="regalo.html" class="gift-button">🎁 APRI IL REGALO 🎁</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Fatto da ecko</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
