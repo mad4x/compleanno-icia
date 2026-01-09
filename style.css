@@ -20,11 +20,6 @@ body {
     padding: 1rem;
 }
 
-img {
-    width: 45vh;
-    height: 50vh;
-}
-
 .container {
     background: rgba(255, 255, 255, 0.95);
     border: 5px solid #FFD700; /* Bordo Oro */
